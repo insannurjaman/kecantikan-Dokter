@@ -1,0 +1,56 @@
+package com.example.dokterapps.mainscreen.home.penanganan;
+
+import android.content.Context;
+import android.net.Uri;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.widget.CardView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.example.dokterapps.R;
+import com.example.dokterapps.mainscreen.home.rekammedis.RekamMedisFragment;
+import com.example.dokterapps.mainscreen.home.suspendlist.SuspendListFragment;
+
+
+public class PenangananFragment extends Fragment {
+    CardView rekamMedis;
+
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_penanganan, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+
+        rekamMedis = view.findViewById(R.id.cv_rekam_medis);
+
+        rekamMedis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction t = getFragmentManager().beginTransaction();
+                Fragment mFrag = new RekamMedisFragment();
+                t.replace(R.id.container_home, mFrag);
+                t.commit();
+            }
+        });
+    }
+
+
+}

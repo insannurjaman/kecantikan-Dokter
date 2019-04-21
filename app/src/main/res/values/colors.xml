@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorBottomNav">#99CD00</color>
+    <color name="colorWhite">#FFFF</color>
+    <color name="colorBlack">#535050</color>
+
+    <color name="colorBlue">#2497CD</color>
+    <color name="colorGreen">#8FC000</color>
+
+    <color name="colorOrange">#FC7101</color>
+
+    <color name="colorButtonLogin">#B3B5A6</color>
+    <color name="colorForget">#DCA80B</color>
+    <color name="colorOpenClinic">#1E9400</color>
+</resources>

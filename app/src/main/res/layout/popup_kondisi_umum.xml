@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aandroid="http://schemas.android.com/tools"
+    android:backgroundTint="@color/colorWhite">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_2sdp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="@dimen/_10sdp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="@dimen/_10sdp">
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:cardCornerRadius="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:backgroundTint="#D9EECA"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_10sdp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Foto Wajah Bagian Depan"
+                                        android:textColor="@color/colorBlue" />
+                                    <ImageView
+                                        android:id="@+id/img__popup_kondisi_umum_wajah_depan"
+                                        android:layout_width="@dimen/_90sdp"
+                                        android:layout_height="@dimen/_90sdp"
+                                        android:src="@drawable/ic_user_hitam"
+                                        android:layout_marginTop="@dimen/_5sdp" />
+
+                                </LinearLayout>
+
+
+                            </android.support.v7.widget.CardView>
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:cardCornerRadius="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:backgroundTint="#D9EECA"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_10sdp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Foto Wajah Bagian Kiri"
+                                        android:textColor="@color/colorBlue" />
+
+                                    <ImageView
+                                        android:id="@+id/img__popup_kondisi_umum_wajah_kiri"
+                                        android:layout_width="@dimen/_90sdp"
+                                        android:layout_height="@dimen/_90sdp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:src="@drawable/ic_user_hitam" />
+
+                                </LinearLayout>
+
+
+                            </android.support.v7.widget.CardView>
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:cardCornerRadius="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:backgroundTint="#D9EECA"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_10sdp"
+                                    >
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Foto Wajah Bagian Kanan"
+                                        android:textColor="@color/colorBlue" />
+                                    <ImageView
+                                        android:id="@+id/img__popup_kondisi_umum_wajah_kanan"
+                                        android:layout_width="@dimen/_90sdp"
+                                        android:layout_height="@dimen/_90sdp"
+                                        android:src="@drawable/ic_user_hitam"
+                                        android:layout_marginTop="@dimen/_5sdp" />
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </android.support.v4.widget.NestedScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</android.support.v7.widget.CardView>

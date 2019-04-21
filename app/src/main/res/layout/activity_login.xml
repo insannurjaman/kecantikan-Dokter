@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_bg"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".auth.LoginActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:src="@drawable/img_logo"/>
+    <EditText
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:hint="Username"/>
+    <EditText
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/rounded_button_login"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_17ssp"
+        android:layout_gravity="right"
+        android:textColor="@color/colorForget"
+        android:text="Forget"/>
+
+    </LinearLayout>
+
+</LinearLayout>
